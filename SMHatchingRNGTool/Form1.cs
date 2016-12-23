@@ -17,34 +17,34 @@ namespace SMHatchingRNGTool
         #region deta
         string[] natures =
         {
-            "がんばりや", "さみしがり", "ゆうかん", "いじっぱり",
-            "やんちゃ", "ずぶとい", "すなお", "のんき", "わんぱく",
-            "のうてんき", "おくびょう", "せっかち", "まじめ", "ようき",
-            "むじゃき", "ひかえめ", "おっとり", "れいせい", "てれや",
-            "うっかりや", "おだやか", "おとなしい",
-            "なまいき", "しんちょう", "きまぐれ"
+            "Hardy", "Lonely", "Brave", "Adamant",
+            "Naughty", "Bold", "Docile", "Relaxed", "Impish",
+            "Lax", "Timid", "Hasty", "Serious", "Jolly",
+            "Naive", "Modest", "Mild", "Quiet", "Bashful",
+            "Rash", "Calm", "Gentle",
+            "Sassy", "Careful", "Quirky"
         };
 
 
         object[,] mezapa =
         {
-            {25, "指定なし"},
-            {0, "格闘"},
-            {1, "飛行"},
-            {2, "毒"},
-            {3, "地面"},
-            {4, "岩"},
-            {5, "虫"},
-            {6, "ゴースト"},
-            {7, "鋼"},
-            {8, "炎"},
-            {9, "水"},
-            {10, "草"},
-            {11, "電気"},
-            {12, "エスパー"},
-            {13, "氷"},
-            {14, "ドラゴン"},
-            {15, "悪"},
+            {25, "Any"},
+            {0, "Fighting"},
+            {1, "Flying"},
+            {2, "Poison"},
+            {3, "Ground"},
+            {4, "Rock"},
+            {5, "Bug"},
+            {6, "Ghost"},
+            {7, "Steel"},
+            {8, "Fire"},
+            {9, "Water"},
+            {10, "Grass"},
+            {11, "Electric"},
+            {12, "Psychic"},
+            {13, "Ice"},
+            {14, "Dragon"},
+            {15, "Dark"},
         };
         #endregion
 
@@ -185,7 +185,7 @@ namespace SMHatchingRNGTool
 
             #region 遺伝
             int iden_loop = 0;
-            if (pre_Items.Text == "赤い糸" || post_Items.Text == "赤い糸") iden_loop = 5;
+            if (pre_Items.Text == "Destiny Knot" || post_Items.Text == "Destiny Knot") iden_loop = 5;
             else iden_loop = 3;
 
             string[] iden_oya_box = new string[iden_loop];
@@ -279,7 +279,7 @@ namespace SMHatchingRNGTool
                 seed = tiny.status[3].ToString("X") + "," + tiny.status[2].ToString("X") + "," + tiny.status[1].ToString("X") + "," + tiny.status[0].ToString("X");
                 //生の乱数列からの性別と遺伝箇所
                 row_sex = (r % 252 < sex_threshold) ? "♀" : "♂";
-                row_iden_oya = (r % 2 == 0) ? "先" : "後";
+                row_iden_oya = (r % 2 == 0) ? "M" : "F";
 
                 //計算
                 cal(st, out IV, out iden_box, out iden_oya_box, out p_sex, out p_ability, out p_nature, out pid, out encryption_key, out count, out p_ball);
@@ -287,7 +287,7 @@ namespace SMHatchingRNGTool
                 for (int j = 0; j < iden_loop; j++)
                 {
                     int value = (int)iden_box[j];
-                    IV[value] = (iden_oya_box[j].ToString() == "先") ? pre_parent[value] : post_parent[value];
+                    IV[value] = (iden_oya_box[j].ToString() == "M") ? pre_parent[value] : post_parent[value];
                 }
 
                 HID = pid >> 16;
@@ -326,21 +326,21 @@ namespace SMHatchingRNGTool
                     {
                         if (!mezapa_check(IV, u_Type)) goto ExitIF;
                     }
-                    if (u_ability != "指定なし")
+                    if (u_ability != "Any")
                     {
                         if (u_ability != p_ability) goto ExitIF;
                     }
-                    if (u_sex != "指定なし")
+                    if (u_sex != "Any")
                     {
                         if (u_sex != p_sex) goto ExitIF;
                     }
-                    if (u_ball != "指定なし")
+                    if (u_ball != "Any")
                     {
                         if (u_ball != p_ball) goto ExitIF;
                     }
                 }
 
-                if (pre_Items.Text == "変わらず" || post_Items.Text == "変わらず") p_nature = "変わらず";
+                if (pre_Items.Text == "Everstone" || post_Items.Text == "Everstone") p_nature = "Everstone";
                 if (!(International.Checked || omamori.Checked)) true_pid = "仮性格値";
                 else true_pid = pid.ToString("X");
 
@@ -355,12 +355,12 @@ namespace SMHatchingRNGTool
                     {
                         if (pre.ForeColor == Color.DodgerBlue)
                         {
-                            if (iden_oya_box[k] == "先") row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
+                            if (iden_oya_box[k] == "M") row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
                             else row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.Red;
                         }
                         else
                         {
-                            if (iden_oya_box[k] == "先") row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.Red;
+                            if (iden_oya_box[k] == "M") row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.Red;
                             else row.Cells[2 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
                         }
 
@@ -499,7 +499,7 @@ namespace SMHatchingRNGTool
 
             #region 遺伝
             int iden_loop = 0;
-            if (pre_Items.Text == "赤い糸" || post_Items.Text == "赤い糸") iden_loop = 5;
+            if (pre_Items.Text == "Destiny Knot" || post_Items.Text == "Destiny Knot") iden_loop = 5;
             else iden_loop = 3;
 
             string[] iden_oya_box = new string[iden_loop];
@@ -617,7 +617,7 @@ namespace SMHatchingRNGTool
                 count++;
 
                 //両親変わらず
-                if (pre_Items.Text == "変わらず" & post_Items.Text == "変わらず")
+                if (pre_Items.Text == "Everstone" & post_Items.Text == "Everstone")
                 {
                     r = tiny.temper();
                     tiny.nextState();
@@ -639,11 +639,11 @@ namespace SMHatchingRNGTool
                         if (value < 20) p_ability = "1";
                         else p_ability = "2";
                     }
-                    if (post_ability.Text == "夢")
+                    if (post_ability.Text == "HA")
                     {
                         if (value < 20) p_ability = "1";
                         else if (value < 40) p_ability = "2";
-                        else p_ability = "夢";
+                        else p_ability = "HA";
                     }
                 }
                 else
@@ -660,11 +660,11 @@ namespace SMHatchingRNGTool
                             if (value < 20) p_ability = "1";
                             else p_ability = "2";
                         }
-                        if (post_ability.Text == "夢")
+                        if (post_ability.Text == "HA")
                         {
                             if (value < 20) p_ability = "1";
                             else if (value < 40) p_ability = "2";
-                            else p_ability = "夢";
+                            else p_ability = "HA";
                         }
                     }
                     else
@@ -679,11 +679,11 @@ namespace SMHatchingRNGTool
                             if (value < 20) p_ability = "1";
                             else p_ability = "2";
                         }
-                        if (pre_ability.Text == "夢")
+                        if (pre_ability.Text == "HA")
                         {
                             if (value < 20) p_ability = "1";
                             else if (value < 40) p_ability = "2";
-                            else p_ability = "夢";
+                            else p_ability = "HA";
                         }
                     }
                 }
@@ -714,7 +714,7 @@ namespace SMHatchingRNGTool
                         for (int j = 0; j < 2; j++)
                         {
                             r = tiny.temper();
-                            string iden_oya = (r % 2 == 0) ? "先" : "後";
+                            string iden_oya = (r % 2 == 0) ? "M" : "F";
                             tiny.nextState();
 
                             if (j == 0)
@@ -781,7 +781,7 @@ namespace SMHatchingRNGTool
                 if (!(post_ditto.Checked || pre_ditto.Checked || Heterogeneity.Checked))
                 {
                     r = tiny.temper();
-                    p_ball = (r % 100 >= 50) ? "先親" : "後親";
+                    p_ball = (r % 100 >= 50) ? "Father" : "Mother";
                     tiny.nextState();
                     count++;
                 }
@@ -795,7 +795,7 @@ namespace SMHatchingRNGTool
                     for (int j = 0; j < iden_loop; j++)
                     {
                         value = (int)iden_box[j];
-                        IV[value] = (iden_oya_box[j].ToString() == "先") ? pre_parent[value] : post_parent[value];
+                        IV[value] = (iden_oya_box[j].ToString() == "M") ? pre_parent[value] : post_parent[value];
                     }
 
                     HID = pid >> 16;
@@ -815,12 +815,12 @@ namespace SMHatchingRNGTool
                     {
                         if (pre.ForeColor == Color.DodgerBlue)
                         {
-                            if (iden_oya_box[k] == "先") row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
+                            if (iden_oya_box[k] == "M") row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
                             else row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.Red;
                         }
                         else
                         {
-                            if (iden_oya_box[k] == "先") row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.Red;
+                            if (iden_oya_box[k] == "M") row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.Red;
                             else row.Cells[3 + (int)iden_box[k]].Style.ForeColor = Color.DodgerBlue;
                         }
 
@@ -894,7 +894,7 @@ namespace SMHatchingRNGTool
 
             #region 遺伝箇所
             int iden_loop = 0;
-            if (pre_Items.Text == "赤い糸" || post_Items.Text == "赤い糸") iden_loop = 5;
+            if (pre_Items.Text == "Destiny Knot" || post_Items.Text == "Destiny Knot") iden_loop = 5;
             else iden_loop = 3;
 
             if (iden_loop == 3)
@@ -935,7 +935,7 @@ namespace SMHatchingRNGTool
             count++;
 
             //両親変わらず
-            if (pre_Items.Text == "変わらず" & post_Items.Text == "変わらず")
+            if (pre_Items.Text == "Everstone" & post_Items.Text == "Everstone")
             {
                 r = tiny.temper();
                 tiny.nextState();
@@ -958,11 +958,11 @@ namespace SMHatchingRNGTool
                     if (value < 20) p_ability = "1";
                     else p_ability = "2";
                 }
-                if (post_ability.Text == "夢")
+                if (post_ability.Text == "HA")
                 {
                     if (value < 20) p_ability = "1";
                     else if (value < 40) p_ability = "2";
-                    else p_ability = "夢";
+                    else p_ability = "HA";
                 }
             }
             else
@@ -979,11 +979,11 @@ namespace SMHatchingRNGTool
                         if (value < 20) p_ability = "1";
                         else p_ability = "2";
                     }
-                    if (post_ability.Text == "夢")
+                    if (post_ability.Text == "HA")
                     {
                         if (value < 20) p_ability = "1";
                         else if (value < 40) p_ability = "2";
-                        else p_ability = "夢";
+                        else p_ability = "HA";
                     }
                 }
                 else
@@ -998,11 +998,11 @@ namespace SMHatchingRNGTool
                         if (value < 20) p_ability = "1";
                         else p_ability = "2";
                     }
-                    if (pre_ability.Text == "夢")
+                    if (pre_ability.Text == "HA")
                     {
                         if (value < 20) p_ability = "1";
                         else if (value < 40) p_ability = "2";
-                        else p_ability = "夢";
+                        else p_ability = "HA";
                     }
                 }
             }
@@ -1033,7 +1033,7 @@ namespace SMHatchingRNGTool
                     for (int j = 0; j < 2; j++)
                     {
                         r = tiny.temper();
-                        string iden_oya = (r % 2 == 0) ? "先" : "後";
+                        string iden_oya = (r % 2 == 0) ? "M" : "F";
                         tiny.nextState();
 
                         if (j == 0)
@@ -1098,7 +1098,7 @@ namespace SMHatchingRNGTool
             if (!(post_ditto.Checked || pre_ditto.Checked　|| Heterogeneity.Checked))
             {
                 r = tiny.temper();
-                p_ball = (r % 100 >= 50) ? "先親" : "後親";
+                p_ball = (r % 100 >= 50) ? "Father" : "Mother";
                 tiny.nextState();
                 count++;
             }

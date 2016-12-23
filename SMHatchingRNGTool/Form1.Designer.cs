@@ -262,15 +262,15 @@
             this.Column16,
             this.Column17});
             this.k_dataGridView.ContextMenuStrip = this.contextMenuStrip1;
-            this.k_dataGridView.Location = new System.Drawing.Point(6, 238);
+            this.k_dataGridView.Location = new System.Drawing.Point(6, 258);
             this.k_dataGridView.Name = "k_dataGridView";
             this.k_dataGridView.RowTemplate.Height = 21;
-            this.k_dataGridView.Size = new System.Drawing.Size(1102, 435);
+            this.k_dataGridView.Size = new System.Drawing.Size(1102, 471);
             this.k_dataGridView.TabIndex = 0;
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "消費";
+            this.Column1.HeaderText = "Frame";
             this.Column1.Name = "Column1";
             this.Column1.Width = 54;
             // 
@@ -282,76 +282,75 @@
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "H";
+            this.Column4.HeaderText = "HP";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 27;
+            this.Column4.Width = 35;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "A";
+            this.Column5.HeaderText = "Atk";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 27;
+            this.Column5.Width = 35;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "B";
+            this.Column6.HeaderText = "Def";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 27;
+            this.Column6.Width = 35;
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "C";
+            this.Column7.HeaderText = "SpA";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 27;
+            this.Column7.Width = 35;
             // 
             // Column8
             // 
-            this.Column8.HeaderText = "D";
+            this.Column8.HeaderText = "SpD";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 27;
+            this.Column8.Width = 35;
             // 
             // Column9
             // 
-            this.Column9.HeaderText = "S";
+            this.Column9.HeaderText = "Spe";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 27;
+            this.Column9.Width = 35;
             // 
             // Column18
             // 
-            this.Column18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column18.HeaderText = "性別";
+            this.Column18.HeaderText = "Gender";
             this.Column18.Name = "Column18";
-            this.Column18.Width = 54;
+            this.Column18.Width = 50;
             // 
             // Column19
             // 
             this.Column19.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column19.HeaderText = "特性";
+            this.Column19.HeaderText = "Ability";
             this.Column19.Name = "Column19";
-            this.Column19.Width = 54;
+            this.Column19.Width = 59;
             // 
             // Column20
             // 
             this.Column20.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column20.HeaderText = "性格";
+            this.Column20.HeaderText = "Nature";
             this.Column20.Name = "Column20";
-            this.Column20.Width = 54;
+            this.Column20.Width = 64;
             // 
             // Column10
             // 
-            this.Column10.HeaderText = "性格値";
+            this.Column10.HeaderText = "PID";
             this.Column10.Name = "Column10";
             this.Column10.Width = 66;
             // 
             // Column11
             // 
-            this.Column11.HeaderText = "暗号化定数";
+            this.Column11.HeaderText = "EC";
             this.Column11.Name = "Column11";
             this.Column11.Width = 90;
             // 
             // Column12
             // 
-            this.Column12.HeaderText = "受取消費";
+            this.Column12.HeaderText = "Frames adv. by receiving";
             this.Column12.Name = "Column12";
             this.Column12.Width = 80;
             // 
@@ -393,7 +392,7 @@
             // 
             // Column17
             // 
-            this.Column17.HeaderText = "性別";
+            this.Column17.HeaderText = "Gender";
             this.Column17.Name = "Column17";
             this.Column17.Width = 66;
             // 
@@ -404,45 +403,45 @@
             this.SelectAllToolStripMenuItem,
             this.孵化リストへseedを入れるToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(225, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(236, 70);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.copyToolStripMenuItem.Text = "コピー";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // SelectAllToolStripMenuItem
             // 
             this.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem";
-            this.SelectAllToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.SelectAllToolStripMenuItem.Text = "全て選択";
+            this.SelectAllToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.SelectAllToolStripMenuItem.Text = "Select All";
             this.SelectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllToolStripMenuItem_Click);
             // 
             // 孵化リストへseedを入れるToolStripMenuItem
             // 
             this.孵化リストへseedを入れるToolStripMenuItem.Name = "孵化リストへseedを入れるToolStripMenuItem";
-            this.孵化リストへseedを入れるToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.孵化リストへseedを入れるToolStripMenuItem.Text = "連続孵化リストへseedを入れる";
+            this.孵化リストへseedを入れるToolStripMenuItem.Size = new System.Drawing.Size(235, 22);
+            this.孵化リストへseedを入れるToolStripMenuItem.Text = "Copy seed to egg receiving list";
             this.孵化リストへseedを入れるToolStripMenuItem.Click += new System.EventHandler(this.Send2List);
             // 
             // post
             // 
             this.post.AutoSize = true;
             this.post.ForeColor = System.Drawing.Color.Red;
-            this.post.Location = new System.Drawing.Point(23, 134);
+            this.post.Location = new System.Drawing.Point(35, 143);
             this.post.Name = "post";
-            this.post.Size = new System.Drawing.Size(29, 12);
+            this.post.Size = new System.Drawing.Size(19, 13);
             this.post.TabIndex = 124;
-            this.post.Text = "♀親";
+            this.post.Text = "♀";
             this.post.DoubleClick += new System.EventHandler(this.Change_color);
             // 
             // pre_parent1
             // 
             this.pre_parent1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent1.Location = new System.Drawing.Point(57, 38);
+            this.pre_parent1.Location = new System.Drawing.Point(57, 41);
             this.pre_parent1.Maximum = new decimal(new int[] {
             31,
             0,
@@ -463,27 +462,27 @@
             // 
             this.pre.AutoSize = true;
             this.pre.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre.Location = new System.Drawing.Point(22, 43);
+            this.pre.Location = new System.Drawing.Point(33, 45);
             this.pre.Name = "pre";
-            this.pre.Size = new System.Drawing.Size(29, 12);
+            this.pre.Size = new System.Drawing.Size(19, 13);
             this.pre.TabIndex = 9;
-            this.pre.Text = "♂親";
+            this.pre.Text = "♂";
             this.pre.DoubleClick += new System.EventHandler(this.Change_color);
             // 
             // label199
             // 
             this.label199.AutoSize = true;
-            this.label199.Location = new System.Drawing.Point(73, 23);
+            this.label199.Location = new System.Drawing.Point(73, 25);
             this.label199.Name = "label199";
-            this.label199.Size = new System.Drawing.Size(13, 12);
+            this.label199.Size = new System.Drawing.Size(22, 13);
             this.label199.TabIndex = 12;
-            this.label199.Text = "H";
+            this.label199.Text = "HP";
             // 
             // post_parent1
             // 
             this.post_parent1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent1.ForeColor = System.Drawing.Color.Red;
-            this.post_parent1.Location = new System.Drawing.Point(58, 129);
+            this.post_parent1.Location = new System.Drawing.Point(58, 140);
             this.post_parent1.Maximum = new decimal(new int[] {
             31,
             0,
@@ -504,7 +503,7 @@
             // 
             this.post_parent2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent2.ForeColor = System.Drawing.Color.Red;
-            this.post_parent2.Location = new System.Drawing.Point(109, 129);
+            this.post_parent2.Location = new System.Drawing.Point(109, 140);
             this.post_parent2.Maximum = new decimal(new int[] {
             31,
             0,
@@ -525,7 +524,7 @@
             // 
             this.post_parent3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent3.ForeColor = System.Drawing.Color.Red;
-            this.post_parent3.Location = new System.Drawing.Point(160, 129);
+            this.post_parent3.Location = new System.Drawing.Point(160, 140);
             this.post_parent3.Maximum = new decimal(new int[] {
             31,
             0,
@@ -546,7 +545,7 @@
             // 
             this.post_parent4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent4.ForeColor = System.Drawing.Color.Red;
-            this.post_parent4.Location = new System.Drawing.Point(211, 129);
+            this.post_parent4.Location = new System.Drawing.Point(211, 140);
             this.post_parent4.Maximum = new decimal(new int[] {
             31,
             0,
@@ -567,7 +566,7 @@
             // 
             this.post_parent5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent5.ForeColor = System.Drawing.Color.Red;
-            this.post_parent5.Location = new System.Drawing.Point(262, 129);
+            this.post_parent5.Location = new System.Drawing.Point(262, 140);
             this.post_parent5.Maximum = new decimal(new int[] {
             31,
             0,
@@ -588,7 +587,7 @@
             // 
             this.post_parent6.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.post_parent6.ForeColor = System.Drawing.Color.Red;
-            this.post_parent6.Location = new System.Drawing.Point(312, 129);
+            this.post_parent6.Location = new System.Drawing.Point(312, 140);
             this.post_parent6.Maximum = new decimal(new int[] {
             31,
             0,
@@ -609,7 +608,7 @@
             // 
             this.pre_parent2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent2.Location = new System.Drawing.Point(108, 38);
+            this.pre_parent2.Location = new System.Drawing.Point(108, 41);
             this.pre_parent2.Maximum = new decimal(new int[] {
             31,
             0,
@@ -629,17 +628,17 @@
             // label152
             // 
             this.label152.AutoSize = true;
-            this.label152.Location = new System.Drawing.Point(124, 23);
+            this.label152.Location = new System.Drawing.Point(124, 25);
             this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(13, 12);
+            this.label152.Size = new System.Drawing.Size(23, 13);
             this.label152.TabIndex = 131;
-            this.label152.Text = "A";
+            this.label152.Text = "Atk";
             // 
             // pre_parent3
             // 
             this.pre_parent3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent3.Location = new System.Drawing.Point(159, 38);
+            this.pre_parent3.Location = new System.Drawing.Point(159, 41);
             this.pre_parent3.Maximum = new decimal(new int[] {
             31,
             0,
@@ -659,17 +658,17 @@
             // label153
             // 
             this.label153.AutoSize = true;
-            this.label153.Location = new System.Drawing.Point(175, 23);
+            this.label153.Location = new System.Drawing.Point(175, 25);
             this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(13, 12);
+            this.label153.Size = new System.Drawing.Size(24, 13);
             this.label153.TabIndex = 133;
-            this.label153.Text = "B";
+            this.label153.Text = "Def";
             // 
             // pre_parent4
             // 
             this.pre_parent4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent4.Location = new System.Drawing.Point(210, 38);
+            this.pre_parent4.Location = new System.Drawing.Point(210, 41);
             this.pre_parent4.Maximum = new decimal(new int[] {
             31,
             0,
@@ -689,17 +688,17 @@
             // label179
             // 
             this.label179.AutoSize = true;
-            this.label179.Location = new System.Drawing.Point(226, 23);
+            this.label179.Location = new System.Drawing.Point(226, 25);
             this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(13, 12);
+            this.label179.Size = new System.Drawing.Size(27, 13);
             this.label179.TabIndex = 135;
-            this.label179.Text = "C";
+            this.label179.Text = "SpA";
             // 
             // pre_parent5
             // 
             this.pre_parent5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent5.Location = new System.Drawing.Point(261, 38);
+            this.pre_parent5.Location = new System.Drawing.Point(261, 41);
             this.pre_parent5.Maximum = new decimal(new int[] {
             31,
             0,
@@ -719,17 +718,17 @@
             // label178
             // 
             this.label178.AutoSize = true;
-            this.label178.Location = new System.Drawing.Point(277, 23);
+            this.label178.Location = new System.Drawing.Point(277, 25);
             this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(13, 12);
+            this.label178.Size = new System.Drawing.Size(28, 13);
             this.label178.TabIndex = 137;
-            this.label178.Text = "D";
+            this.label178.Text = "SpD";
             // 
             // pre_parent6
             // 
             this.pre_parent6.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_parent6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.pre_parent6.Location = new System.Drawing.Point(312, 38);
+            this.pre_parent6.Location = new System.Drawing.Point(312, 41);
             this.pre_parent6.Maximum = new decimal(new int[] {
             31,
             0,
@@ -749,109 +748,109 @@
             // label177
             // 
             this.label177.AutoSize = true;
-            this.label177.Location = new System.Drawing.Point(328, 23);
+            this.label177.Location = new System.Drawing.Point(328, 25);
             this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(12, 12);
+            this.label177.Size = new System.Drawing.Size(26, 13);
             this.label177.TabIndex = 139;
-            this.label177.Text = "S";
+            this.label177.Text = "Spe";
             // 
             // pre_Items
             // 
             this.pre_Items.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pre_Items.FormattingEnabled = true;
             this.pre_Items.Items.AddRange(new object[] {
-            "指定なし",
-            "変わらず",
-            "赤い糸"});
-            this.pre_Items.Location = new System.Drawing.Point(75, 75);
+            "Any",
+            "Everstone",
+            "Destiny Knot"});
+            this.pre_Items.Location = new System.Drawing.Point(75, 81);
             this.pre_Items.Name = "pre_Items";
-            this.pre_Items.Size = new System.Drawing.Size(80, 20);
+            this.pre_Items.Size = new System.Drawing.Size(80, 21);
             this.pre_Items.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 78);
+            this.label3.Location = new System.Drawing.Point(22, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 12);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 153;
-            this.label3.Text = "持ち物";
+            this.label3.Text = "Held item";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(73, 114);
+            this.label8.Location = new System.Drawing.Point(73, 124);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 12);
+            this.label8.Size = new System.Drawing.Size(22, 13);
             this.label8.TabIndex = 156;
-            this.label8.Text = "H";
+            this.label8.Text = "HP";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(124, 114);
+            this.label7.Location = new System.Drawing.Point(124, 124);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 12);
+            this.label7.Size = new System.Drawing.Size(23, 13);
             this.label7.TabIndex = 157;
-            this.label7.Text = "A";
+            this.label7.Text = "Atk";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(175, 114);
+            this.label6.Location = new System.Drawing.Point(175, 124);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 12);
+            this.label6.Size = new System.Drawing.Size(24, 13);
             this.label6.TabIndex = 158;
-            this.label6.Text = "B";
+            this.label6.Text = "Def";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(226, 114);
+            this.label5.Location = new System.Drawing.Point(226, 124);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 12);
+            this.label5.Size = new System.Drawing.Size(27, 13);
             this.label5.TabIndex = 159;
-            this.label5.Text = "C";
+            this.label5.Text = "SpA";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(277, 114);
+            this.label4.Location = new System.Drawing.Point(277, 124);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 12);
+            this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 160;
-            this.label4.Text = "D";
+            this.label4.Text = "SpD";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(328, 114);
+            this.label2.Location = new System.Drawing.Point(328, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(12, 12);
+            this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 161;
-            this.label2.Text = "S";
+            this.label2.Text = "Spe";
             // 
             // post_Items
             // 
             this.post_Items.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.post_Items.FormattingEnabled = true;
             this.post_Items.Items.AddRange(new object[] {
-            "指定なし",
-            "変わらず",
-            "赤い糸"});
-            this.post_Items.Location = new System.Drawing.Point(75, 166);
+            "Any",
+            "Everstone",
+            "Destiny Knot"});
+            this.post_Items.Location = new System.Drawing.Point(75, 180);
             this.post_Items.Name = "post_Items";
-            this.post_Items.Size = new System.Drawing.Size(80, 20);
+            this.post_Items.Size = new System.Drawing.Size(80, 21);
             this.post_Items.TabIndex = 16;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 169);
+            this.label10.Location = new System.Drawing.Point(22, 183);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 12);
+            this.label10.Size = new System.Drawing.Size(51, 13);
             this.label10.TabIndex = 173;
-            this.label10.Text = "持ち物";
+            this.label10.Text = "Held item";
             // 
             // ek_groupBox1
             // 
@@ -894,53 +893,53 @@
             this.ek_groupBox1.Controls.Add(this.pre);
             this.ek_groupBox1.Controls.Add(this.pre_parent1);
             this.ek_groupBox1.Controls.Add(this.post);
-            this.ek_groupBox1.Location = new System.Drawing.Point(6, 6);
+            this.ek_groupBox1.Location = new System.Drawing.Point(6, 7);
             this.ek_groupBox1.Name = "ek_groupBox1";
-            this.ek_groupBox1.Size = new System.Drawing.Size(369, 226);
+            this.ek_groupBox1.Size = new System.Drawing.Size(369, 245);
             this.ek_groupBox1.TabIndex = 2;
             this.ek_groupBox1.TabStop = false;
-            this.ek_groupBox1.Text = "親の情報";
+            this.ek_groupBox1.Text = "Parent Information";
             // 
             // Heterogeneity
             // 
             this.Heterogeneity.AutoSize = true;
-            this.Heterogeneity.Location = new System.Drawing.Point(33, 199);
+            this.Heterogeneity.Location = new System.Drawing.Point(33, 216);
             this.Heterogeneity.Name = "Heterogeneity";
-            this.Heterogeneity.Size = new System.Drawing.Size(84, 16);
+            this.Heterogeneity.Size = new System.Drawing.Size(143, 17);
             this.Heterogeneity.TabIndex = 179;
-            this.Heterogeneity.Text = "異種間孵化";
+            this.Heterogeneity.Text = "Different species parents";
             this.Heterogeneity.UseVisualStyleBackColor = true;
             // 
             // pre_ditto
             // 
             this.pre_ditto.AutoSize = true;
-            this.pre_ditto.Location = new System.Drawing.Point(299, 77);
+            this.pre_ditto.Location = new System.Drawing.Point(299, 83);
             this.pre_ditto.Name = "pre_ditto";
-            this.pre_ditto.Size = new System.Drawing.Size(58, 16);
+            this.pre_ditto.Size = new System.Drawing.Size(48, 17);
             this.pre_ditto.TabIndex = 15;
-            this.pre_ditto.Text = "メタモン";
+            this.pre_ditto.Text = "Ditto";
             this.pre_ditto.UseVisualStyleBackColor = true;
             this.pre_ditto.Click += new System.EventHandler(this.pre_ditto_Click);
             // 
             // post_ditto
             // 
             this.post_ditto.AutoSize = true;
-            this.post_ditto.Location = new System.Drawing.Point(299, 168);
+            this.post_ditto.Location = new System.Drawing.Point(299, 182);
             this.post_ditto.Name = "post_ditto";
-            this.post_ditto.Size = new System.Drawing.Size(58, 16);
+            this.post_ditto.Size = new System.Drawing.Size(48, 17);
             this.post_ditto.TabIndex = 18;
-            this.post_ditto.Text = "メタモン";
+            this.post_ditto.Text = "Ditto";
             this.post_ditto.UseVisualStyleBackColor = true;
             this.post_ditto.Click += new System.EventHandler(this.post_ditto_Click);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(175, 169);
+            this.label19.Location = new System.Drawing.Point(175, 183);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(29, 12);
+            this.label19.Size = new System.Drawing.Size(34, 13);
             this.label19.TabIndex = 178;
-            this.label19.Text = "特性";
+            this.label19.Text = "Ability";
             // 
             // post_ability
             // 
@@ -949,20 +948,20 @@
             this.post_ability.Items.AddRange(new object[] {
             "1",
             "2",
-            "夢"});
-            this.post_ability.Location = new System.Drawing.Point(210, 166);
+            "HA"});
+            this.post_ability.Location = new System.Drawing.Point(210, 180);
             this.post_ability.Name = "post_ability";
-            this.post_ability.Size = new System.Drawing.Size(45, 20);
+            this.post_ability.Size = new System.Drawing.Size(45, 21);
             this.post_ability.TabIndex = 17;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(175, 78);
+            this.label18.Location = new System.Drawing.Point(175, 85);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 12);
+            this.label18.Size = new System.Drawing.Size(34, 13);
             this.label18.TabIndex = 176;
-            this.label18.Text = "特性";
+            this.label18.Text = "Ability";
             // 
             // pre_ability
             // 
@@ -971,10 +970,10 @@
             this.pre_ability.Items.AddRange(new object[] {
             "1",
             "2",
-            "夢"});
-            this.pre_ability.Location = new System.Drawing.Point(210, 75);
+            "HA"});
+            this.pre_ability.Location = new System.Drawing.Point(210, 81);
             this.pre_ability.Name = "pre_ability";
-            this.pre_ability.Size = new System.Drawing.Size(45, 20);
+            this.pre_ability.Size = new System.Drawing.Size(45, 21);
             this.pre_ability.TabIndex = 14;
             // 
             // sex_ratio
@@ -986,31 +985,31 @@
             "♂7：♀1",
             "♂3：♀1",
             "♂1：♀3",
-            "♂のみ",
-            "♀のみ",
-            "無性別"});
-            this.sex_ratio.Location = new System.Drawing.Point(273, 197);
+            "♂ only",
+            "♀ only",
+            "Genderless"});
+            this.sex_ratio.Location = new System.Drawing.Point(273, 213);
             this.sex_ratio.Name = "sex_ratio";
-            this.sex_ratio.Size = new System.Drawing.Size(80, 20);
+            this.sex_ratio.Size = new System.Drawing.Size(80, 21);
             this.sex_ratio.TabIndex = 20;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(226, 200);
+            this.label17.Location = new System.Drawing.Point(204, 217);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 12);
+            this.label17.Size = new System.Drawing.Size(65, 13);
             this.label17.TabIndex = 122;
-            this.label17.Text = "性別比";
+            this.label17.Text = "Gender ratio";
             // 
             // International
             // 
             this.International.AutoSize = true;
-            this.International.Location = new System.Drawing.Point(22, 27);
+            this.International.Location = new System.Drawing.Point(22, 29);
             this.International.Name = "International";
-            this.International.Size = new System.Drawing.Size(72, 16);
+            this.International.Size = new System.Drawing.Size(103, 17);
             this.International.TabIndex = 52;
-            this.International.Text = "国際孵化";
+            this.International.Text = "Masuda Method";
             this.International.UseVisualStyleBackColor = true;
             // 
             // ek_groupBox2
@@ -1031,18 +1030,18 @@
             this.ek_groupBox2.Controls.Add(this.label176);
             this.ek_groupBox2.Controls.Add(this.s_min);
             this.ek_groupBox2.Controls.Add(this.s_max);
-            this.ek_groupBox2.Location = new System.Drawing.Point(697, 6);
+            this.ek_groupBox2.Location = new System.Drawing.Point(697, 7);
             this.ek_groupBox2.Name = "ek_groupBox2";
-            this.ek_groupBox2.Size = new System.Drawing.Size(223, 226);
+            this.ek_groupBox2.Size = new System.Drawing.Size(223, 245);
             this.ek_groupBox2.TabIndex = 3;
             this.ek_groupBox2.TabStop = false;
-            this.ek_groupBox2.Text = "検索範囲";
+            this.ek_groupBox2.Text = "Search Range";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label13.Location = new System.Drawing.Point(15, 110);
+            this.label13.Location = new System.Drawing.Point(15, 119);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(70, 14);
             this.label13.TabIndex = 77;
@@ -1052,7 +1051,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(91, 110);
+            this.label14.Location = new System.Drawing.Point(91, 119);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(21, 14);
             this.label14.TabIndex = 76;
@@ -1061,7 +1060,7 @@
             // status0
             // 
             this.status0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status0.Location = new System.Drawing.Point(118, 107);
+            this.status0.Location = new System.Drawing.Point(118, 116);
             this.status0.Name = "status0";
             this.status0.Size = new System.Drawing.Size(80, 22);
             this.status0.TabIndex = 69;
@@ -1073,7 +1072,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label11.Location = new System.Drawing.Point(15, 82);
+            this.label11.Location = new System.Drawing.Point(15, 89);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 14);
             this.label11.TabIndex = 74;
@@ -1083,7 +1082,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(91, 82);
+            this.label12.Location = new System.Drawing.Point(91, 89);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(21, 14);
             this.label12.TabIndex = 73;
@@ -1092,7 +1091,7 @@
             // status1
             // 
             this.status1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status1.Location = new System.Drawing.Point(118, 79);
+            this.status1.Location = new System.Drawing.Point(118, 86);
             this.status1.Name = "status1";
             this.status1.Size = new System.Drawing.Size(80, 22);
             this.status1.TabIndex = 68;
@@ -1104,7 +1103,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label1.Location = new System.Drawing.Point(15, 54);
+            this.label1.Location = new System.Drawing.Point(15, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 14);
             this.label1.TabIndex = 71;
@@ -1114,7 +1113,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(91, 54);
+            this.label9.Location = new System.Drawing.Point(91, 59);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(21, 14);
             this.label9.TabIndex = 70;
@@ -1123,7 +1122,7 @@
             // status2
             // 
             this.status2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status2.Location = new System.Drawing.Point(118, 51);
+            this.status2.Location = new System.Drawing.Point(118, 55);
             this.status2.Name = "status2";
             this.status2.Size = new System.Drawing.Size(80, 22);
             this.status2.TabIndex = 67;
@@ -1135,7 +1134,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label16.Location = new System.Drawing.Point(15, 26);
+            this.label16.Location = new System.Drawing.Point(15, 28);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(70, 14);
             this.label16.TabIndex = 68;
@@ -1145,7 +1144,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(91, 26);
+            this.label15.Location = new System.Drawing.Point(91, 28);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(21, 14);
             this.label15.TabIndex = 67;
@@ -1154,7 +1153,7 @@
             // status3
             // 
             this.status3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status3.Location = new System.Drawing.Point(118, 23);
+            this.status3.Location = new System.Drawing.Point(118, 25);
             this.status3.Name = "status3";
             this.status3.Size = new System.Drawing.Size(80, 22);
             this.status3.TabIndex = 66;
@@ -1165,24 +1164,24 @@
             // label163
             // 
             this.label163.AutoSize = true;
-            this.label163.Location = new System.Drawing.Point(18, 152);
+            this.label163.Location = new System.Drawing.Point(18, 171);
             this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(41, 12);
+            this.label163.Size = new System.Drawing.Size(109, 13);
             this.label163.TabIndex = 64;
-            this.label163.Text = "消費数";
+            this.label163.Text = "Frame advancements";
             // 
             // label176
             // 
-            this.label176.Location = new System.Drawing.Point(106, 180);
+            this.label176.Location = new System.Drawing.Point(106, 195);
             this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(18, 16);
+            this.label176.Size = new System.Drawing.Size(18, 17);
             this.label176.TabIndex = 61;
             this.label176.Text = "～";
             // 
             // s_min
             // 
             this.s_min.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.s_min.Location = new System.Drawing.Point(20, 175);
+            this.s_min.Location = new System.Drawing.Point(20, 190);
             this.s_min.MaxLength = 10;
             this.s_min.Name = "s_min";
             this.s_min.Size = new System.Drawing.Size(80, 22);
@@ -1193,7 +1192,7 @@
             // s_max
             // 
             this.s_max.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.s_max.Location = new System.Drawing.Point(130, 175);
+            this.s_max.Location = new System.Drawing.Point(130, 190);
             this.s_max.MaxLength = 10;
             this.s_max.Name = "s_max";
             this.s_max.Size = new System.Drawing.Size(80, 22);
@@ -1204,7 +1203,7 @@
             // IVup2
             // 
             this.IVup2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup2.Location = new System.Drawing.Point(115, 57);
+            this.IVup2.Location = new System.Drawing.Point(115, 62);
             this.IVup2.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1224,25 +1223,25 @@
             // label115
             // 
             this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(92, 94);
+            this.label115.Location = new System.Drawing.Point(92, 102);
             this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(17, 12);
+            this.label115.Size = new System.Drawing.Size(19, 13);
             this.label115.TabIndex = 80;
             this.label115.Text = "～";
             // 
             // label114
             // 
             this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(92, 62);
+            this.label114.Location = new System.Drawing.Point(92, 67);
             this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(17, 12);
+            this.label114.Size = new System.Drawing.Size(19, 13);
             this.label114.TabIndex = 78;
             this.label114.Text = "～";
             // 
             // IVup3
             // 
             this.IVup3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup3.Location = new System.Drawing.Point(115, 89);
+            this.IVup3.Location = new System.Drawing.Point(115, 96);
             this.IVup3.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1262,7 +1261,7 @@
             // IVup1
             // 
             this.IVup1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup1.Location = new System.Drawing.Point(115, 25);
+            this.IVup1.Location = new System.Drawing.Point(115, 27);
             this.IVup1.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1282,25 +1281,25 @@
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(92, 126);
+            this.label113.Location = new System.Drawing.Point(92, 137);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(17, 12);
+            this.label113.Size = new System.Drawing.Size(19, 13);
             this.label113.TabIndex = 82;
             this.label113.Text = "～";
             // 
             // label112
             // 
             this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(92, 30);
+            this.label112.Location = new System.Drawing.Point(92, 33);
             this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(17, 12);
+            this.label112.Size = new System.Drawing.Size(19, 13);
             this.label112.TabIndex = 76;
             this.label112.Text = "～";
             // 
             // IVup4
             // 
             this.IVup4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup4.Location = new System.Drawing.Point(115, 121);
+            this.IVup4.Location = new System.Drawing.Point(115, 131);
             this.IVup4.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1320,7 +1319,7 @@
             // IVlow6
             // 
             this.IVlow6.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow6.Location = new System.Drawing.Point(41, 185);
+            this.IVlow6.Location = new System.Drawing.Point(41, 200);
             this.IVlow6.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1335,7 +1334,7 @@
             // IVlow5
             // 
             this.IVlow5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow5.Location = new System.Drawing.Point(41, 153);
+            this.IVlow5.Location = new System.Drawing.Point(41, 166);
             this.IVlow5.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1350,16 +1349,16 @@
             // label110
             // 
             this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(92, 158);
+            this.label110.Location = new System.Drawing.Point(92, 171);
             this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(17, 12);
+            this.label110.Size = new System.Drawing.Size(19, 13);
             this.label110.TabIndex = 84;
             this.label110.Text = "～";
             // 
             // IVlow4
             // 
             this.IVlow4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow4.Location = new System.Drawing.Point(41, 121);
+            this.IVlow4.Location = new System.Drawing.Point(41, 131);
             this.IVlow4.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1374,7 +1373,7 @@
             // IVup5
             // 
             this.IVup5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup5.Location = new System.Drawing.Point(115, 153);
+            this.IVup5.Location = new System.Drawing.Point(115, 166);
             this.IVup5.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1394,7 +1393,7 @@
             // IVlow3
             // 
             this.IVlow3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow3.Location = new System.Drawing.Point(41, 89);
+            this.IVlow3.Location = new System.Drawing.Point(41, 96);
             this.IVlow3.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1409,7 +1408,7 @@
             // IVlow2
             // 
             this.IVlow2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow2.Location = new System.Drawing.Point(41, 57);
+            this.IVlow2.Location = new System.Drawing.Point(41, 62);
             this.IVlow2.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1424,16 +1423,16 @@
             // label109
             // 
             this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(92, 190);
+            this.label109.Location = new System.Drawing.Point(92, 206);
             this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(17, 12);
+            this.label109.Size = new System.Drawing.Size(19, 13);
             this.label109.TabIndex = 86;
             this.label109.Text = "～";
             // 
             // IVlow1
             // 
             this.IVlow1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVlow1.Location = new System.Drawing.Point(41, 25);
+            this.IVlow1.Location = new System.Drawing.Point(41, 27);
             this.IVlow1.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1448,119 +1447,119 @@
             // label105
             // 
             this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(22, 30);
+            this.label105.Location = new System.Drawing.Point(16, 30);
             this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(13, 12);
+            this.label105.Size = new System.Drawing.Size(22, 13);
             this.label105.TabIndex = 38;
-            this.label105.Text = "H";
+            this.label105.Text = "HP";
             // 
             // label103
             // 
             this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(22, 62);
+            this.label103.Location = new System.Drawing.Point(16, 65);
             this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(13, 12);
+            this.label103.Size = new System.Drawing.Size(23, 13);
             this.label103.TabIndex = 40;
-            this.label103.Text = "A";
+            this.label103.Text = "Atk";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(22, 94);
+            this.label48.Location = new System.Drawing.Point(14, 99);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(13, 12);
+            this.label48.Size = new System.Drawing.Size(24, 13);
             this.label48.TabIndex = 42;
-            this.label48.Text = "B";
+            this.label48.Text = "Def";
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(22, 126);
+            this.label47.Location = new System.Drawing.Point(12, 134);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(13, 12);
+            this.label47.Size = new System.Drawing.Size(27, 13);
             this.label47.TabIndex = 44;
-            this.label47.Text = "C";
+            this.label47.Text = "SpA";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(22, 158);
+            this.label45.Location = new System.Drawing.Point(12, 169);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(13, 12);
+            this.label45.Size = new System.Drawing.Size(28, 13);
             this.label45.TabIndex = 46;
-            this.label45.Text = "D";
+            this.label45.Text = "SpD";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(22, 190);
+            this.label43.Location = new System.Drawing.Point(13, 203);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(12, 12);
+            this.label43.Size = new System.Drawing.Size(26, 13);
             this.label43.TabIndex = 48;
-            this.label43.Text = "S";
+            this.label43.Text = "Spe";
             // 
             // mezapaType
             // 
             this.mezapaType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.mezapaType.FormattingEnabled = true;
-            this.mezapaType.Location = new System.Drawing.Point(214, 91);
+            this.mezapaType.Location = new System.Drawing.Point(214, 99);
             this.mezapaType.Name = "mezapaType";
-            this.mezapaType.Size = new System.Drawing.Size(80, 20);
+            this.mezapaType.Size = new System.Drawing.Size(80, 21);
             this.mezapaType.TabIndex = 39;
             // 
             // label127
             // 
             this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(174, 94);
+            this.label127.Location = new System.Drawing.Point(165, 102);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(34, 12);
+            this.label127.Size = new System.Drawing.Size(49, 13);
             this.label127.TabIndex = 117;
-            this.label127.Text = "めざパ";
+            this.label127.Text = "HP Type";
             // 
             // label104
             // 
             this.label104.AutoSize = true;
-            this.label104.Location = new System.Drawing.Point(179, 30);
+            this.label104.Location = new System.Drawing.Point(179, 33);
             this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(29, 12);
+            this.label104.Size = new System.Drawing.Size(34, 13);
             this.label104.TabIndex = 116;
-            this.label104.Text = "特性";
+            this.label104.Text = "Ability";
             // 
             // ability
             // 
             this.ability.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ability.FormattingEnabled = true;
             this.ability.Items.AddRange(new object[] {
-            "指定なし",
+            "Any",
             "1",
             "2",
-            "夢"});
-            this.ability.Location = new System.Drawing.Point(214, 27);
+            "HA"});
+            this.ability.Location = new System.Drawing.Point(214, 29);
             this.ability.Name = "ability";
-            this.ability.Size = new System.Drawing.Size(80, 20);
+            this.ability.Size = new System.Drawing.Size(80, 21);
             this.ability.TabIndex = 37;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(179, 62);
+            this.label46.Location = new System.Drawing.Point(171, 67);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(29, 12);
+            this.label46.Size = new System.Drawing.Size(42, 13);
             this.label46.TabIndex = 120;
-            this.label46.Text = "性別";
+            this.label46.Text = "Gender";
             // 
             // sex
             // 
             this.sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sex.FormattingEnabled = true;
             this.sex.Items.AddRange(new object[] {
-            "指定なし",
+            "Any",
             "♂",
             "♀",
             "-"});
-            this.sex.Location = new System.Drawing.Point(214, 59);
+            this.sex.Location = new System.Drawing.Point(214, 64);
             this.sex.Name = "sex";
-            this.sex.Size = new System.Drawing.Size(80, 20);
+            this.sex.Size = new System.Drawing.Size(80, 21);
             this.sex.TabIndex = 38;
             // 
             // y_groupBox2
@@ -1598,49 +1597,49 @@
             this.y_groupBox2.Controls.Add(this.label115);
             this.y_groupBox2.Controls.Add(this.IVup2);
             this.y_groupBox2.Controls.Add(this.ability);
-            this.y_groupBox2.Location = new System.Drawing.Point(381, 6);
+            this.y_groupBox2.Location = new System.Drawing.Point(381, 7);
             this.y_groupBox2.Name = "y_groupBox2";
-            this.y_groupBox2.Size = new System.Drawing.Size(310, 226);
+            this.y_groupBox2.Size = new System.Drawing.Size(310, 245);
             this.y_groupBox2.TabIndex = 20;
             this.y_groupBox2.TabStop = false;
-            this.y_groupBox2.Text = "目標個体";
+            this.y_groupBox2.Text = "Filters";
             // 
             // Invalid_Refine
             // 
             this.Invalid_Refine.AutoSize = true;
-            this.Invalid_Refine.Location = new System.Drawing.Point(194, 189);
+            this.Invalid_Refine.Location = new System.Drawing.Point(194, 205);
             this.Invalid_Refine.Name = "Invalid_Refine";
-            this.Invalid_Refine.Size = new System.Drawing.Size(100, 16);
+            this.Invalid_Refine.Size = new System.Drawing.Size(88, 17);
             this.Invalid_Refine.TabIndex = 186;
-            this.Invalid_Refine.Text = "絞り込みを無効";
+            this.Invalid_Refine.Text = "Disable filters";
             this.Invalid_Refine.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(174, 126);
+            this.label21.Location = new System.Drawing.Point(187, 137);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(35, 12);
+            this.label21.Size = new System.Drawing.Size(24, 13);
             this.label21.TabIndex = 122;
-            this.label21.Text = "ボール";
+            this.label21.Text = "Ball";
             // 
             // ball
             // 
             this.ball.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ball.FormattingEnabled = true;
             this.ball.Items.AddRange(new object[] {
-            "指定なし",
-            "先親",
-            "後親"});
-            this.ball.Location = new System.Drawing.Point(214, 123);
+            "Any",
+            "Father",
+            "Mother"});
+            this.ball.Location = new System.Drawing.Point(214, 133);
             this.ball.Name = "ball";
-            this.ball.Size = new System.Drawing.Size(80, 20);
+            this.ball.Size = new System.Drawing.Size(80, 21);
             this.ball.TabIndex = 40;
             // 
             // IVup6
             // 
             this.IVup6.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IVup6.Location = new System.Drawing.Point(115, 185);
+            this.IVup6.Location = new System.Drawing.Point(115, 200);
             this.IVup6.Maximum = new decimal(new int[] {
             31,
             0,
@@ -1659,22 +1658,22 @@
             // 
             // k_search
             // 
-            this.k_search.Location = new System.Drawing.Point(926, 209);
+            this.k_search.Location = new System.Drawing.Point(926, 226);
             this.k_search.Name = "k_search";
-            this.k_search.Size = new System.Drawing.Size(75, 23);
+            this.k_search.Size = new System.Drawing.Size(75, 25);
             this.k_search.TabIndex = 176;
-            this.k_search.Text = "計算";
+            this.k_search.Text = "Generate";
             this.k_search.UseVisualStyleBackColor = true;
             this.k_search.Click += new System.EventHandler(this.k_search_Click);
             // 
             // omamori
             // 
             this.omamori.AutoSize = true;
-            this.omamori.Location = new System.Drawing.Point(22, 52);
+            this.omamori.Location = new System.Drawing.Point(22, 56);
             this.omamori.Name = "omamori";
-            this.omamori.Size = new System.Drawing.Size(75, 16);
+            this.omamori.Size = new System.Drawing.Size(85, 17);
             this.omamori.TabIndex = 174;
-            this.omamori.Text = "光るお守り";
+            this.omamori.Text = "Shiny Charm";
             this.omamori.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -1686,21 +1685,21 @@
             this.groupBox1.Controls.Add(this.shiny);
             this.groupBox1.Controls.Add(this.International);
             this.groupBox1.Controls.Add(this.omamori);
-            this.groupBox1.Location = new System.Drawing.Point(926, 6);
+            this.groupBox1.Location = new System.Drawing.Point(926, 7);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(182, 197);
+            this.groupBox1.Size = new System.Drawing.Size(182, 213);
             this.groupBox1.TabIndex = 177;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "その他";
+            this.groupBox1.Text = "Other";
             // 
             // other_TSV
             // 
             this.other_TSV.AutoSize = true;
-            this.other_TSV.Location = new System.Drawing.Point(22, 168);
+            this.other_TSV.Location = new System.Drawing.Point(22, 182);
             this.other_TSV.Name = "other_TSV";
-            this.other_TSV.Size = new System.Drawing.Size(133, 16);
+            this.other_TSV.Size = new System.Drawing.Size(126, 17);
             this.other_TSV.TabIndex = 185;
-            this.other_TSV.Text = "他TSVで色違いを探す";
+            this.other_TSV.Text = "TSV.txt matches only";
             this.other_TSV.UseVisualStyleBackColor = true;
             // 
             // k_TSV_shiny
@@ -1708,18 +1707,18 @@
             this.k_TSV_shiny.AutoSize = true;
             this.k_TSV_shiny.Checked = true;
             this.k_TSV_shiny.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.k_TSV_shiny.Location = new System.Drawing.Point(22, 105);
+            this.k_TSV_shiny.Location = new System.Drawing.Point(22, 114);
             this.k_TSV_shiny.Name = "k_TSV_shiny";
-            this.k_TSV_shiny.Size = new System.Drawing.Size(149, 16);
+            this.k_TSV_shiny.Size = new System.Drawing.Size(151, 17);
             this.k_TSV_shiny.TabIndex = 184;
-            this.k_TSV_shiny.Text = "TSVを考慮した計算をする";
+            this.k_TSV_shiny.Text = "Use TSV when generating";
             this.k_TSV_shiny.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(19, 133);
+            this.label20.Location = new System.Drawing.Point(19, 144);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(28, 14);
             this.label20.TabIndex = 180;
@@ -1728,7 +1727,7 @@
             // TSV
             // 
             this.TSV.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TSV.Location = new System.Drawing.Point(53, 130);
+            this.TSV.Location = new System.Drawing.Point(53, 141);
             this.TSV.Name = "TSV";
             this.TSV.Size = new System.Drawing.Size(80, 22);
             this.TSV.TabIndex = 72;
@@ -1739,21 +1738,21 @@
             // shiny
             // 
             this.shiny.AutoSize = true;
-            this.shiny.Location = new System.Drawing.Point(22, 77);
+            this.shiny.Location = new System.Drawing.Point(22, 83);
             this.shiny.Name = "shiny";
-            this.shiny.Size = new System.Drawing.Size(103, 16);
+            this.shiny.Size = new System.Drawing.Size(76, 17);
             this.shiny.TabIndex = 178;
-            this.shiny.Text = "色違いのみ出力";
+            this.shiny.Text = "Shiny Only";
             this.shiny.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(12, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1122, 705);
+            this.tabControl1.Size = new System.Drawing.Size(1122, 764);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -1767,7 +1766,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1114, 679);
+            this.tabPage1.Size = new System.Drawing.Size(1114, 738);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "個体検索";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1780,18 +1779,18 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1114, 679);
+            this.tabPage2.Size = new System.Drawing.Size(1114, 738);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "連続孵化リスト";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // List_search
             // 
-            this.List_search.Location = new System.Drawing.Point(154, 252);
+            this.List_search.Location = new System.Drawing.Point(154, 273);
             this.List_search.Name = "List_search";
-            this.List_search.Size = new System.Drawing.Size(75, 23);
+            this.List_search.Size = new System.Drawing.Size(75, 25);
             this.List_search.TabIndex = 182;
-            this.List_search.Text = "計算";
+            this.List_search.Text = "Generate";
             this.List_search.UseVisualStyleBackColor = true;
             this.List_search.Click += new System.EventHandler(this.List_search_Click);
             // 
@@ -1817,21 +1816,21 @@
             this.Column23,
             this.dataGridViewTextBoxColumn13});
             this.L_dataGridView.ContextMenuStrip = this.contextMenuStrip2;
-            this.L_dataGridView.Location = new System.Drawing.Point(235, 6);
+            this.L_dataGridView.Location = new System.Drawing.Point(235, 7);
             this.L_dataGridView.Name = "L_dataGridView";
             this.L_dataGridView.RowTemplate.Height = 21;
-            this.L_dataGridView.Size = new System.Drawing.Size(873, 667);
+            this.L_dataGridView.Size = new System.Drawing.Size(873, 723);
             this.L_dataGridView.TabIndex = 0;
             // 
             // Column21
             // 
-            this.Column21.HeaderText = "受取";
+            this.Column21.HeaderText = "Eggs received";
             this.Column21.Name = "Column21";
             this.Column21.Width = 54;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "消費";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Frames";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.Width = 54;
             // 
@@ -1843,64 +1842,70 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "H";
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn3.HeaderText = "HP";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 27;
+            this.dataGridViewTextBoxColumn3.Width = 47;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "A";
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Atk";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 27;
+            this.dataGridViewTextBoxColumn4.Width = 48;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "B";
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Def";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 27;
+            this.dataGridViewTextBoxColumn5.Width = 49;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "C";
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn6.HeaderText = "SpA";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 27;
+            this.dataGridViewTextBoxColumn6.Width = 52;
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "D";
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn7.HeaderText = "SpD";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.Width = 27;
+            this.dataGridViewTextBoxColumn7.Width = 53;
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "S";
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.dataGridViewTextBoxColumn8.HeaderText = "Spe";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.Width = 27;
+            this.dataGridViewTextBoxColumn8.Width = 51;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn9.HeaderText = "性別";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Gender";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.Width = 54;
+            this.dataGridViewTextBoxColumn9.Width = 67;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn10.HeaderText = "特性";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Ability";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.Width = 54;
+            this.dataGridViewTextBoxColumn10.Width = 59;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn11.HeaderText = "性格";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Nature";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.Width = 54;
+            this.dataGridViewTextBoxColumn11.Width = 64;
             // 
             // dataGridViewTextBoxColumn12
             // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "性格値";
+            this.dataGridViewTextBoxColumn12.HeaderText = "PID";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.Width = 66;
             // 
@@ -1912,7 +1917,7 @@
             // 
             // dataGridViewTextBoxColumn13
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "暗号化定数";
+            this.dataGridViewTextBoxColumn13.HeaderText = "EC";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 90;
             // 
@@ -1922,20 +1927,20 @@
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip2.Name = "contextMenuStrip1";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(120, 48);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(123, 48);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
-            this.toolStripMenuItem1.Text = "コピー";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.toolStripMenuItem1.Text = "Copy";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.L_copyToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(119, 22);
-            this.toolStripMenuItem2.Text = "全て選択";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.toolStripMenuItem2.Text = "Select All";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.L_SelectAllToolStripMenuItem_Click);
             // 
             // groupBox5
@@ -1957,30 +1962,30 @@
             this.groupBox5.Controls.Add(this.label72);
             this.groupBox5.Controls.Add(this.n_min);
             this.groupBox5.Controls.Add(this.n_max);
-            this.groupBox5.Location = new System.Drawing.Point(6, 6);
+            this.groupBox5.Location = new System.Drawing.Point(6, 7);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(223, 240);
+            this.groupBox5.Size = new System.Drawing.Size(223, 260);
             this.groupBox5.TabIndex = 180;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "検索範囲";
+            this.groupBox5.Text = "Search Range";
             // 
             // L_TSV_shiny
             // 
             this.L_TSV_shiny.AutoSize = true;
             this.L_TSV_shiny.Checked = true;
             this.L_TSV_shiny.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.L_TSV_shiny.Location = new System.Drawing.Point(18, 210);
+            this.L_TSV_shiny.Location = new System.Drawing.Point(18, 228);
             this.L_TSV_shiny.Name = "L_TSV_shiny";
-            this.L_TSV_shiny.Size = new System.Drawing.Size(149, 16);
+            this.L_TSV_shiny.Size = new System.Drawing.Size(151, 17);
             this.L_TSV_shiny.TabIndex = 183;
-            this.L_TSV_shiny.Text = "TSVを考慮した計算をする";
+            this.L_TSV_shiny.Text = "Use TSV when generating";
             this.L_TSV_shiny.UseVisualStyleBackColor = true;
             // 
             // label63
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label63.Location = new System.Drawing.Point(15, 110);
+            this.label63.Location = new System.Drawing.Point(15, 119);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(70, 14);
             this.label63.TabIndex = 77;
@@ -1990,7 +1995,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(91, 110);
+            this.label64.Location = new System.Drawing.Point(91, 119);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(21, 14);
             this.label64.TabIndex = 76;
@@ -1999,7 +2004,7 @@
             // L_status0
             // 
             this.L_status0.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_status0.Location = new System.Drawing.Point(118, 107);
+            this.L_status0.Location = new System.Drawing.Point(118, 116);
             this.L_status0.Name = "L_status0";
             this.L_status0.Size = new System.Drawing.Size(80, 22);
             this.L_status0.TabIndex = 4;
@@ -2011,7 +2016,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label65.Location = new System.Drawing.Point(15, 82);
+            this.label65.Location = new System.Drawing.Point(15, 89);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(70, 14);
             this.label65.TabIndex = 74;
@@ -2021,7 +2026,7 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(91, 82);
+            this.label66.Location = new System.Drawing.Point(91, 89);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(21, 14);
             this.label66.TabIndex = 73;
@@ -2030,7 +2035,7 @@
             // L_status1
             // 
             this.L_status1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_status1.Location = new System.Drawing.Point(118, 79);
+            this.L_status1.Location = new System.Drawing.Point(118, 86);
             this.L_status1.Name = "L_status1";
             this.L_status1.Size = new System.Drawing.Size(80, 22);
             this.L_status1.TabIndex = 3;
@@ -2042,7 +2047,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label67.Location = new System.Drawing.Point(15, 54);
+            this.label67.Location = new System.Drawing.Point(15, 59);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(70, 14);
             this.label67.TabIndex = 71;
@@ -2052,7 +2057,7 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(91, 54);
+            this.label68.Location = new System.Drawing.Point(91, 59);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(21, 14);
             this.label68.TabIndex = 70;
@@ -2061,7 +2066,7 @@
             // L_status2
             // 
             this.L_status2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_status2.Location = new System.Drawing.Point(117, 51);
+            this.L_status2.Location = new System.Drawing.Point(117, 55);
             this.L_status2.Name = "L_status2";
             this.L_status2.Size = new System.Drawing.Size(80, 22);
             this.L_status2.TabIndex = 2;
@@ -2073,7 +2078,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Consolas", 9F);
-            this.label69.Location = new System.Drawing.Point(15, 26);
+            this.label69.Location = new System.Drawing.Point(15, 28);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(70, 14);
             this.label69.TabIndex = 68;
@@ -2083,7 +2088,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(91, 26);
+            this.label70.Location = new System.Drawing.Point(91, 28);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(21, 14);
             this.label70.TabIndex = 67;
@@ -2092,7 +2097,7 @@
             // L_status3
             // 
             this.L_status3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_status3.Location = new System.Drawing.Point(118, 23);
+            this.L_status3.Location = new System.Drawing.Point(118, 25);
             this.L_status3.Name = "L_status3";
             this.L_status3.Size = new System.Drawing.Size(80, 22);
             this.L_status3.TabIndex = 1;
@@ -2103,24 +2108,24 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(18, 152);
+            this.label71.Location = new System.Drawing.Point(18, 165);
             this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(71, 12);
+            this.label71.Size = new System.Drawing.Size(109, 13);
             this.label71.TabIndex = 64;
-            this.label71.Text = "受け取り回数";
+            this.label71.Text = "Frame advancements";
             // 
             // label72
             // 
-            this.label72.Location = new System.Drawing.Point(106, 180);
+            this.label72.Location = new System.Drawing.Point(106, 195);
             this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(18, 16);
+            this.label72.Size = new System.Drawing.Size(18, 17);
             this.label72.TabIndex = 61;
             this.label72.Text = "～";
             // 
             // n_min
             // 
             this.n_min.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.n_min.Location = new System.Drawing.Point(20, 175);
+            this.n_min.Location = new System.Drawing.Point(20, 190);
             this.n_min.MaxLength = 10;
             this.n_min.Name = "n_min";
             this.n_min.Size = new System.Drawing.Size(80, 22);
@@ -2131,7 +2136,7 @@
             // n_max
             // 
             this.n_max.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.n_max.Location = new System.Drawing.Point(130, 175);
+            this.n_max.Location = new System.Drawing.Point(130, 190);
             this.n_max.MaxLength = 10;
             this.n_max.Name = "n_max";
             this.n_max.Size = new System.Drawing.Size(80, 22);
@@ -2141,13 +2146,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 729);
+            this.ClientSize = new System.Drawing.Size(1146, 790);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "Pokemon SunMoon Hatching RNG Tool";
+            this.Text = "Pokémon Sun/Moon Hatching RNG Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.k_dataGridView)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
@@ -2325,6 +2330,23 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.CheckBox Heterogeneity;
+        private System.Windows.Forms.CheckBox other_TSV;
+        private System.Windows.Forms.CheckBox Invalid_Refine;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -2346,23 +2368,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column15;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.CheckBox other_TSV;
-        private System.Windows.Forms.CheckBox Invalid_Refine;
     }
 }
 
